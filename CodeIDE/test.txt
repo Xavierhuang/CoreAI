@@ -1,0 +1,3 @@
+Hello! This is a test file to confirm the app is working correctly.
+
+This is the part the user added manually for the test.
