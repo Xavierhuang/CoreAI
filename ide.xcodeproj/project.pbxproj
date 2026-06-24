@@ -25,15 +25,24 @@
 /* Begin PBXFileReference section */
 		EC9D880737EB4B588A9B7BD0 /* ide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F8265B28D0465CB5BDED43 /* ideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7481DFBDDD1C4A93BEA2461A /* ide-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ide-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		04956D797084401C9C0F229A /* ide */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ide; sourceTree = "<group>"; };
 		1FD1E02DDC7E4705BEC804D0 /* ideTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ideTests; sourceTree = "<group>"; };
+		45C2B9DD90C94DF394537E68 /* ide-ios */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "ide-ios"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0FBB6AC3499B4B35A0474A21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BC15D302BE402C91BDAF33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +57,7 @@
 			children = (
 				04956D797084401C9C0F229A /* ide */,
 				1FD1E02DDC7E4705BEC804D0 /* ideTests */,
+				45C2B9DD90C94DF394537E68 /* ide-ios */,
 				043E63AA0EAC47D8B2F6A18F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +67,7 @@
 			children = (
 				EC9D880737EB4B588A9B7BD0 /* ide.app */,
 				93F8265B28D0465CB5BDED43 /* ideTests.xctest */,
+				7481DFBDDD1C4A93BEA2461A /* ide-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +114,26 @@
 			productReference = 93F8265B28D0465CB5BDED43 /* ideTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		49EDB4E41ADE40859F11C220 /* ide-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37A8D56E9D047E4A2CDB385 /* Build configuration list for PBXNativeTarget "ide-ios" */;
+			buildPhases = (
+				6E85AF8C30874D04B8BB1D26 /* Sources */,
+				E8BC15D302BE402C91BDAF33 /* Frameworks */,
+				5794494D962A4E61BF2AF5A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				45C2B9DD90C94DF394537E68 /* ide-ios */,
+			);
+			name = "ide-ios";
+			productName = "ide-ios";
+			productReference = 7481DFBDDD1C4A93BEA2461A /* ide-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -138,12 +169,20 @@
 			targets = (
 				8DD92FCBD438429D94FD0E90 /* ide */,
 				110CD61D598547BAB5AE6A7F /* ideTests */,
+				49EDB4E41ADE40859F11C220 /* ide-ios */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		390F530446AC4F3FB1ED9802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5794494D962A4E61BF2AF5A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -161,6 +200,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		45FC6BF34B564A2085F4F097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E85AF8C30874D04B8BB1D26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,6 +365,66 @@
 			};
 			name = Release;
 		};
+		6F07EEF0B0F549FC9A9D4625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ide-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		452866899ADB43EAA4B82114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ide-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +451,15 @@
 			buildConfigurations = (
 				732874A4B2514C53B48A13D9 /* Debug */,
 				37B07766B3F34DDABF96436C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37A8D56E9D047E4A2CDB385 /* Build configuration list for PBXNativeTarget "ide-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F07EEF0B0F549FC9A9D4625 /* Debug */,
+				452866899ADB43EAA4B82114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
